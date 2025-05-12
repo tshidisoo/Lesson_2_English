@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.pronoun-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.sentence-display {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #2980b9;
+}
+
+.option-btn.correct {
+    background-color: #2ecc71;
+}
+
+.option-btn.incorrect {
+    background-color: #e74c3c;
+}
+
+.feedback {
+    font-weight: bold;
+    margin-bottom: 15px;
+    height: 30px;
+}
+
+.score-container {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+#next-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#next-btn:hover {
+    background-color: #27ae60;
+}
+
+.hidden {
+    display: none !important;
+}
